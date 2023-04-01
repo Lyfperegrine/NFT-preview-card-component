@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display:flex;
+    min-height:100vh;
+    background-color: hsl(217, 54%, 11%);
+    font-family: 'Outfit', sans-serif;
+  
+  }
+  body >div {margin:auto;}
+
+.container {
+    width: 323px;
+    height: 550px;
+    background-color: hsl(216, 50%, 16%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 10px;
+}
+
+.info{
+    width: 280px;
+    height: 76%;
+    display: flex;
+    flex-direction: column;
+  justify-content: space-around;
+   
+    padding: 18px 0;
+}
+.info img{
+    width: 280px;
+    height: 280px;
+    border-radius: 7px;
+}
+
+.info h3{
+    color: #EEF3FB;
+ margin: 10px 0 0 0;
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+.info h5{
+    color: #6E83A2;
+ 
+    font-weight: 400;
+     margin: 8px 0 0 0;
+    font-size: 1.09rem;
+}
+.ETH_time_period{
+    width: 280px;
+    height: 12%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0 ;
+    margin: -20px 0 0 0;
+}
+.value_of-eth , .day_left{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+   
+}
+.value_of-eth h5{
+    color: hsl(178, 100%, 50%) ;
+    font-size: 1rem;
+    margin-left: 5px;
+   
+}
+
+.day_left h5{
+    color: #899FC1;
+    font-weight: 500;
+    font-size: .97rem;
+    margin-left: 6px;
+}
+
+.created_by{
+    width: 280px;
+    height: 12%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* justify-content: space-between; */
+    padding: 35px 0 ;
+}
+.created_by h5{
+    color: #697F9A;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-left: 15px;
+}
+.created_by img {
+    width: 35px;
+    height: 35px;
+ border-radius: 50%;
+    border: 1px solid #C5C7CC;
+}
+
+hr{
+  
+    border: none;
+    height: 1px;
+    background-color:#2C3E56;
+     
+}
+ 
