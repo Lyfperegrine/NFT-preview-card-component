@@ -34,17 +34,18 @@ body {
    
     padding: 18px 0;
 }
-.info img{
-    width: 280px;
-    height: 280px;
-    border-radius: 7px;
-}
+
+ 
 
 .info h3{
     color: #EEF3FB;
  margin: 10px 0 0 0;
     font-weight: 600;
     font-size: 1.3rem;
+}
+.info h3:hover {
+    color: hsl(178, 100%, 50%) ;
+    cursor: pointer;
 }
 .info h5{
     color: #6E83A2;
@@ -100,6 +101,13 @@ body {
     font-weight: 400;
     margin-left: 15px;
 }
+.created_by h5 .owner {
+    color : #ECF6FF;
+}
+.created_by h5 .owner:hover{
+    color: hsl(178, 100%, 50%) ;
+    cursor: pointer;
+}
 .created_by img {
     width: 35px;
     height: 35px;
@@ -115,3 +123,63 @@ hr{
      
 }
  
+
+/* extras css */
+
+ 
+.image{
+    width: 280px;
+    height: 280px;
+    border-radius: 7px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    transition: .5s;
+    background-color: #555;
+}
+
+.image:after{
+    content: '';
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    width: 500px;
+    height: 500px;
+    transform: translate(-140%, -50%);
+    background-color:hsl(178, 100%, 50%) ;
+    
+    border-radius: 50%;
+    transition: .8s;
+}
+
+ .image:hover:after{
+    transform: translate(-50%, -50%);
+    opacity: 0.5;
+}
+
+ 
+
+.image img{
+    width: 280px;
+    height: 280px;
+    border-radius: 7px;
+    transition: .8s;
+}
+
+i{
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    transform: translate(-2000px, -50%);
+    color: #fff;
+    transition: .8s;
+    font-size: 2rem;
+    transition-timing-function: ease-in;
+}
+
+.image:hover i{
+    transform: translate(-50%, -50%);
+    transition-timing-function: ease;
+}  
